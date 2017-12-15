@@ -1,0 +1,30 @@
+package OrientedObjectLanguage2;
+
+public class InstanceofTest {
+
+	public static void main(String[] args) {
+		FireEngine2 fe = new FireEngine2();
+		
+		if (fe instanceof FireEngine2) {
+			System.out.println("This is a FireEngine instance");
+			
+		}
+		
+		if(fe instanceof Car4) {
+			System.out.println("This is a Car4 instance");
+			
+		}
+		
+		if(fe instanceof Object) {
+			System.out.println("This is an Object instance");
+			
+		}
+		
+		System.out.println(fe.getClass().getName());
+
+	}
+
+}
+
+class Car4 { }
+class FireEngine2 extends Car4 { }
